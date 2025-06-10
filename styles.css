@@ -19,14 +19,14 @@ Fonts:
 */
 
 /* 
-  Purple Theme Colors & Fonts
+  Blue Theme Colors & Fonts
 
   Primary Colors:
-  - Light Purple:   #E0BBFF
-  - Medium Purple:  #B266FF
-  - Deep Purple:    #7C3AED
-  - Dark Purple:    #5A189A
-  - Accent Purple:  #9D4EDD
+  - Light Blue:   #D0F0FF
+  - Medium Blue:  #2E9DF7
+  - Deep Blue:    #1565C0
+  - Dark Blue:    #0A2540
+  - Accent Blue:  #4FC3F7
 
   Fonts:
   - Proxima Nova
@@ -35,7 +35,7 @@ Fonts:
 
 /* Set up the main font and background color for the whole page */
 body {
-  background-color: #E0BBFF; /* Light purple background */
+  background-color: #D0F0FF; /* Light blue background */
   font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
   margin: 0;
   padding: 0;
