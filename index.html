@@ -7,41 +7,54 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water forrrrr Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, water to communities in need.</p>
-    </section>
-
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
-
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+    <!-- Navbar: Stays at the top of the page -->
+    <nav class="navbar">
+        <!-- Logo area on the left -->
+        <div class="navbar-logo">
+            <!-- You can replace this text with an image if you have a logo -->
+            <span>Charity:Water</span>
         </div>
-    </section>
+        <!-- Hamburger button for small screens -->
+        <button class="navbar-toggle" aria-label="Toggle navigation">
+            <!-- Simple hamburger icon using three bars -->
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <!-- Navigation links on the right -->
+        <ul class="navbar-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Impact</a></li>
+            <li><a href="#">Donate</a></li>
+        </ul>
+    </nav>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+
+    <section class="A" id="a">
+      <h1>
+        A.</h1>
+      </section>
+
+    <section class="B" id="b">
+      <h1>
+        B.</h1>
+      </section>
+    
+      <section class="C" id="c">
+      <h1>
+        C.</h1>
+      </section>
+
+    <!-- Simple JavaScript for toggling the navbar on small screens -->
+    <script>
+    // Get the toggle button and the links
+    const toggle = document.querySelector('.navbar-toggle');
+    const links = document.querySelector('.navbar-links');
+    // When the button is clicked, show or hide the links
+    toggle.addEventListener('click', function() {
+      links.classList.toggle('active');
+    });
+    </script>
 </body>
 </html>

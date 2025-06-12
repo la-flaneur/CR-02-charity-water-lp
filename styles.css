@@ -18,44 +18,45 @@ Fonts:
 
 */
 
-/* 
-  Blue Theme Colors & Fonts
-
-  Primary Colors:
-  - Light Blue:   #D0F0FF
-  - Medium Blue:  #2E9DF7
-  - Deep Blue:    #1565C0
-  - Dark Blue:    #0A2540
-  - Accent Blue:  #4FC3F7
-
-  Fonts:
-  - Proxima Nova
-  - Avenir
-*/
-
 /* Set up the main font and background color for the whole page */
 body {
-  background-color: #D0F0FF; /* Light blue background */
+  background-color: #8BD1CB; /* Light Blue */
   font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #2d133b; /* Dark purple text for contrast */
+  color: #222; /* Dark text for readability */
 }
 
 /* Add a slight shadow and rounded corners to each section for depth */
 section {
   background: #fff; /* White background for sections */
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.07); /* Soft purple shadow */
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.07); /* Soft blue shadow */
   margin: 24px 10px;
   padding: 24px 16px;
+  margin-bottom: 20px;
+}
+
+/* Example section backgrounds using brand colors */
+#a {
+  background-color: #2E9DF7; /* Primary Blue */
+  color: #fff;
+}
+
+.B {
+  background-color: #FFC907; /* Primary Yellow */
+  color: #222;
+}
+
+.C {
+  background-color: #4FCB53; /* Green */
+  color: #fff;
 }
 
 /* Hero Section Styles */
 .hero {
   position: relative;
-  /* Set a purple-themed background image overlay */
-  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');
+  background-image: url('img/noko-pattern.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,10 +64,8 @@ section {
   text-align: center;
   padding: 60px 20px;
   border-radius: 0 0 16px 16px;
-
-  /* Add a purple overlay for better text readability */
   background-blend-mode: darken;
-  background-color: rgba(124, 58, 237, 0.45); /* Deep purple overlay */
+  background-color: rgba(46, 157, 247, 0.45); /* Primary Blue overlay */
 }
 
 /* Make the headline bold and modern */
@@ -75,35 +74,35 @@ section {
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 15px;
-  text-shadow: 0 2px 8px rgba(90, 24, 154, 0.15); /* Soft purple shadow */
+  text-shadow: 0 2px 8px rgba(46, 157, 247, 0.15); /* Blue shadow */
 }
 
 /* Style the subheadline */
 .hero p {
   font-size: 1.2em;
   margin-top: 0;
-  text-shadow: 0 1px 4px rgba(157, 78, 221, 0.12); /* Lighter purple shadow */
+  text-shadow: 0 1px 4px rgba(46, 157, 247, 0.12); /* Blue shadow */
 }
 
 /* Story Section Styles */
 .story {
-  background-color: #B266FF; /* Medium purple */
-  color: #2d133b;
+  background-color: #8BD1CB; /* Light Blue */
+  color: #222;
   text-align: center;
   padding: 30px 20px;
 }
 
 /* Add accent color to section headings */
 h2 {
-  color: #7C3AED; /* Deep purple */
+  color: #2E9DF7; /* Primary Blue */
   margin-top: 0;
   font-weight: bold;
 }
 
 /* Call-to-Action Section Styles */
 .call-to-action {
-  background-color: #9D4EDD; /* Accent purple */
-  color: #fff;
+  background-color: #FFC907; /* Primary Yellow */
+  color: #222;
   text-align: center;
   padding: 30px 20px;
 }
@@ -114,13 +113,13 @@ h2 {
   max-width: 320px;
   border-radius: 10px;
   margin-bottom: 16px;
-  box-shadow: 0 2px 8px rgba(157, 78, 221, 0.10); /* Purple shadow */
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10); /* Blue shadow */
 }
 
 /* Donate Button Styles */
 .donate-button {
   display: inline-block;
-  background-color: #7C3AED; /* Deep purple */
+  background-color: #4FCB53; /* Green */
   color: #fff;
   padding: 14px 32px;
   text-decoration: none;
@@ -128,7 +127,7 @@ h2 {
   font-weight: bold;
   font-size: 1.1em;
   margin-top: 18px;
-  box-shadow: 0 2px 8px rgba(90, 24, 154, 0.10); /* Purple shadow */
+  box-shadow: 0 2px 8px rgba(79, 203, 83, 0.10); /* Green shadow */
   transition: background 0.3s, transform 0.2s;
   border: none;
   cursor: pointer;
@@ -136,22 +135,118 @@ h2 {
 
 /* Change button color when hovered */
 .donate-button:hover {
-  background-color: #5A189A; /* Dark purple */
+  background-color: #159A48; /* Dark Green */
   transform: translateY(-2px) scale(1.04);
 }
 
-/* Add some spacing between sections */
-section {
-  margin-bottom: 20px;
+/* Navbar styles */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #2E9DF7; /* Primary Blue */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10); /* Blue shadow */
 }
 
-/* 
-  Media Queries for Responsive Design
-  Media queries help make your website look good on different screen sizes,
-  like phones (small screens) and computers (large screens).
-*/
+/* Logo area on the left */
+.navbar-logo {
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
 
-/* This media query applies styles when the screen is 600px wide or less (like on most phones) */
+/* Navigation links on the right */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Each link style */
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+/* Change link color on hover */
+.navbar-links a:hover {
+  color: #FFC907; /* Primary Yellow on hover */
+}
+
+/* Hamburger button styles (hidden on big screens) */
+.navbar-toggle {
+  display: none; /* Hide by default */
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  height: 32px;
+  width: 40px;
+  margin-left: 8px;
+}
+
+/* Hamburger bars */
+.navbar-toggle .bar {
+  width: 28px;
+  height: 4px;
+  background-color: #fff;
+  margin: 4px 0;
+  border-radius: 2px;
+  display: block;
+}
+
+/* Responsive navbar for small screens */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 8px;
+  }
+  /* Show hamburger button */
+  .navbar-toggle {
+    display: flex;
+  }
+  /* Hide links by default on small screens */
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #2E9DF7; /* Match navbar color */
+    position: absolute;
+    top: 56px; /* Height of navbar */
+    left: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+  }
+  /* Show links when active */
+  .navbar-links.active {
+    display: flex;
+  }
+  .navbar-links li {
+    width: 100%;
+    text-align: left;
+    padding: 12px 24px;
+    border-bottom: 1px solid #8BD1CB;
+  }
+  .navbar-links li:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Media Queries for Responsive Design */
 @media (max-width: 600px) {
   .hero {
     padding: 32px 8px;
@@ -178,7 +273,6 @@ section {
   }
 }
 
-/* This media query applies styles when the screen is wider than 600px (like on tablets and computers) */
 @media (min-width: 601px) {
   .impact-content {
     display: flex;
